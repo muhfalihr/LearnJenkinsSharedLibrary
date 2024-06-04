@@ -1,3 +1,3 @@
-def call(steps, String file_name) {
-    steps.sh("cat ${file_name}")
+def call(String file_name) {
+    sh("cat ${file_name}")
 }
