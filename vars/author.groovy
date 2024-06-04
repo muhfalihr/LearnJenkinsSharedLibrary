@@ -1,3 +1,7 @@
+def call() {
+    "muhfalihr"
+}
+
 def name() {
     "Muhammad Falih Romadhoni"
 }
