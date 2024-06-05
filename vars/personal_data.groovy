@@ -1,7 +1,7 @@
 def call(steps, List<Map> personalData) {
     personalData.each { pd ->
         def raw_fn = "${pd.fullname}"
-        def trimmedstr = raw_fn.trim()
+        def trimmedstr = raw_fn.replaceAll("\\s+", "")
         def filename = trimmedstr.toLowerCase()
         def content = "FullName : ${pd.fullname}, Age : ${pd.age}, BirthDate : ${pd.birthdate}"
         steps.sh("echo ${content} > ${filename}.txt")
